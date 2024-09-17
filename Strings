@@ -79,3 +79,27 @@ int main()
     cout<<"Capacity of str is:"<<str.capacity()<<endl;
     return 0;
 }
+
+Question:
+
+#include<iostream>
+#include<vector>
+#include<algorithm>
+using namespace std;
+int main()
+{
+    /*string F_name = "Rishita";
+    string l_name = "Reddy";
+    string Full_name = concat(F_name+l_name);
+    cout<<"The full name is"<<Full_name;*/
+    string full_name = "Jenny'sLectures";
+    string f_name {full_name,0,7};
+    string l_name = full_name.substr(7,8);
+    string formatted_full_name;
+    formatted_full_name = f_name + l_name;
+    formatted_full_name.insert(7," ");
+    cout<<formatted_full_name;
+    return 0;
+    
+}
+
